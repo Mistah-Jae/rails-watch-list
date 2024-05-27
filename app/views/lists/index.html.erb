@@ -1,0 +1,7 @@
+<h1>This show my list</h1>
+<ul>
+ <% @lists.each do |list| %>
+  <li><a href="/lists/<%=list.id%>"><%= list.name %></a></li>
+<% end %>
+<a href="/lists/new">Create new</a>
+</ul>
